@@ -1,0 +1,22 @@
+<!--pages/self/self.wxml-->
+<view class='container'>
+    <view class='self-item'>
+        <image class='self-img' 
+    src="../../icon/self/man.png"></image>
+        <text>绑定账号 ></text>
+    </view>
+    <view class='self-item'>
+        <text>我的地址</text>
+    </view>
+    <view class='self-item'>
+        <text>历史订单</text>
+    </view>
+    <view class='self-item'>
+        <text>问题反馈</text>
+    </view>
+    <view class='self-item'>
+        <text style='color:red'>退出账号</text>
+    </view>
+
+</view>
+

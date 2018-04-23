@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/publish/publish",
+    "pages/order/order",
+    "pages/self/self"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"black",
+    "navigationBarBackgroundColor": "#ff8000",
+    "navigationBarTitleText": "饭温",
+    "navigationBarTextStyle":"#f2f2f2",
+    "backgroundColor": "#f2f2f2"
+  },
+  "tabBar":{
+    "color":"#989898",
+    "selectedColor":"#f9b013",
+    "borderStyle":"black",
+    "backgroundColor":"#f2f2f2",
+    "list":[{
+        "pagePath":"pages/index/index",
+        "iconPath":"icon/tabicon/main page-none.png",
+        "selectedIconPath": "icon/tabicon/main page-full.png",
+        "text":"抢单"
+    },{
+        "pagePath": "pages/publish/publish",
+        "iconPath": "icon/tabicon/release-none.png",
+        "selectedIconPath": "icon/tabicon/release-full.png",
+        "text": "发布"
+    },{
+        "pagePath": "pages/order/order",
+        "iconPath": "icon/tabicon/order-none.png",
+        "selectedIconPath": "icon/tabicon/order-full.png",
+        "text": "订单"
+    },{
+        "pagePath": "pages/self/self",
+        "iconPath": "icon/tabicon/personal-none.png",
+        "selectedIconPath": "icon/tabicon/personal-full.png",
+        "text": "我的"
+    }]
+  }
+}

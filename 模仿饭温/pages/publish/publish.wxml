@@ -1,0 +1,65 @@
+<!--logs.wxml-->
+<import src="../../template/template.wxml"/>
+<view class='container'>
+    
+        <text >选择食堂</text>
+        <view class='order-req'>
+            <view>
+                <radio-group class="radio-group" bindchange="radioChange">
+                    <label wx:for="{{res}}">
+                        <radio value="{{item.name}}" checked="{{item.checked}}" color='#f9ae27'/>{{item.value}}
+                    </label>
+                </radio-group>
+            </view>
+            
+        </view>   
+        <text>餐厅楼层及名称</text>
+        <view class='order-req'>
+            <view>
+                <radio-group class="radio-group" bindchange="radioChange">
+                    <label wx:for="{{floor}}">
+                        <radio value="{{item.name}}" checked="{{item.checked}}" color='#f9ae27'/>{{item.value}}
+                    </label>
+                </radio-group>
+            </view>
+            <view>
+                <input class='resNameInput' placeholder='请输入您需求的餐厅名称'></input>
+            </view>
+              
+        </view>      
+        <text>订单要求</text>
+        <view class='order-req'>
+            <view >
+                <text>送达时间 </text>
+                <template is="publish-arr-time" data="{{time}}"/>
+                <text>至</text>
+                <template is="publish-arr-time" data="{{time}}"/>
+                <text>内</text>                
+                
+            </view>
+            <view>
+                <text>金额限制</text>
+                <input placeholder='请输入金额上限'></input>
+            </view>
+            <view>
+                <input placeholder='请输入个人喜好'></input>
+            </view>
+            
+        
+        </view>
+ 
+        <view class='order-req' style='margin-top:50rpx'>
+            <view>
+                <text>您的地址</text>
+                <text>></text>
+            </view>
+            
+        </view>
+    
+    
+     <button class='publish-btn'>发布</button>  
+    
+
+
+</view>
+

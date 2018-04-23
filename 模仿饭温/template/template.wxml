@@ -1,0 +1,25 @@
+<template name="index-item-temp">
+    <view class='index-list'>
+        <view class='list-item'>
+                    <image src="../../icon/ordericon/restaurant-icon.png"></image>
+                    <text>餐厅名称：{{restaurant_name}}</text>
+                    <text style='font-size:10px;color:#118ed0;'>于{{arrive_time}}前送达</text>
+        </view>
+        <view class='list-item'>
+                    <image src="../../icon/ordericon/floor-icon.png"></image>
+                    <text>餐厅楼层：{{}}</text>
+        </view>
+        <view class='list-item'>
+                    <image src="../../icon/ordericon/target-icon.png"></image>
+                    <text>送达地点：{{}}</text>
+        </view>
+    </view>
+
+</template>
+<template name="publish-arr-time">
+    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+        <view class="picker">
+            {{time}}
+        </view>
+    </picker>
+</template>

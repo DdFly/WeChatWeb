@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <input placeholder='请输入运单号'></input>
+  <button bindtap='btnclick' type="primary">查询</button>
+</view>
+

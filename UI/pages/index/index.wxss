@@ -1,0 +1,25 @@
+/**index.wxss**/
+.contain{
+    height: 100%;
+    width: 100%;
+    background-color: red;   
+    display: flex; 
+    /* flex-direction: column; 
+    flex-wrap: wrap;  */
+    flex-flow: row wrap; 
+    justify-content: space-between;  
+    align-items: baseline; 
+
+}
+
+ .item{
+    width: 100rpx;
+    height: 100rpx; 
+     background-color: green; 
+    border: 1px solid black;
+} 
+
+.item3{
+    display: flex;
+    align-items: flex-end; 
+}

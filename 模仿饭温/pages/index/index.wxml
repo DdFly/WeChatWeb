@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<import src="../../template/template.wxml"/>
+<view class='container'>
+    <view class="index-tab">                                   
+        <text class='tab-item'>旭日苑</text>
+        <text class='tab-item'>美食广场</text>
+        <text class='tab-item'>东升阁</text>
+    </view>
+    <view class='index-view'>
+        
+        <view style='width:100%'>
+            <view class='index-list1'>
+                <text class='index-title'>- 任务墙 -</text>
+            </view>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+        </view>
+    
+    </view>
+  
+</view>

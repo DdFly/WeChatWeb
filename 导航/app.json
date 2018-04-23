@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/stadio/stadio",
+    "pages/test/test"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "测评小程序",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar":{
+    "color": "#aaaaaa",
+    "selectedcolor": "#3cc51f",
+    "borderstyle": "black",
+    "backgroundcolor": "#dddddd",
+    "list":[
+        {
+        "pagePath":"pages/index/index",
+        "iconPath":"image/name.png",
+        "selectedIconPath":"image/phone.png",
+        "text":"首页"
+        },
+        {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/phone.png",
+        "selectedIconPath": "image/edit.png",
+        "text": "消息"
+        },{
+        "pagePath": "pages/test/test",
+        "iconPath": "image/email.png",
+        "selectedIconPath": "image/edit.png",
+        "text": "我的"
+        }
+    ]
+  }
+
+}
