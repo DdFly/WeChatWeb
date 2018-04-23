@@ -2,7 +2,8 @@
 .order-req{
     background-color: white;
     font-size: 13px;
-    padding: 50rpx; 
+    padding: 50rpx;
+     
 }
 .order-req>view{
     display: flex;

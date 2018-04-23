@@ -13,7 +13,6 @@
     color: white;
 }
  .index-title{
-    /* size: 35px; */
     font-size: 15px;
 } 
 
@@ -30,7 +29,7 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    margin-bottom: 5rpx;
+     margin-bottom: 5rpx; 
     padding: 30rpx 0rpx 30rpx 0rpx;
 }
  .index-list1{
