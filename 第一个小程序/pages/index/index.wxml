@@ -1,13 +1,56 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">你好</text>
-  </view>
+<import src="../../template/template.wxml"/>
+<view class='container'>
+    <view class="index-tab">                                   
+        <text id='tab1' class="tab-item {{currentTab==0?'on':'' }}" bindtap='tabclick' data-current='0'>旭日苑</text>
+        <text id='tab2' class="tab-item {{currentTab==1?'on':'' }}" bindtap='tabclick' data-current='1'>美食广场</text>
+        <text id='tab3' class="tab-item {{currentTab==2?'on':'' }}" bindtap='tabclick' data-current='2'>东升阁</text>
+    </view>
+    <swiper current='{{currentTab}}' class='index-view' duration='300'  style="height:{{winHeight - 31}}px" bindchange='bindChange'> 
+        <swiper-item >
+            <view class='index-list1'>
+                <text class='index-title'>- 任务墙1 -</text>
+            </view>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+        
+        </swiper-item>
+        <swiper-item >
+            <view class='index-list1'>
+                <text class='index-title'>- 任务墙2 -</text>
+            </view>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+        
+        </swiper-item>
+        <swiper-item >
+            <view class='index-list1'>
+                <text class='index-title'>- 任务墙3 -</text>
+            </view>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+            <template is="index-item-temp" data="{{...index_itemdata}}"/>
+        
+        </swiper-item>
+    
+    </swiper>
+    <!-- <view class='index-view' style='display:{{viewHidden1}}'>
+        
+        <view style='width:100%'>
+            
+        </view>
+    
+    </view> -->
+  
 </view>

@@ -1,0 +1,31 @@
+
+.order-req{
+    background-color: white;
+    font-size: 13px;
+    padding: 50rpx;
+     
+}
+.order-req>view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    width: 100%;
+
+}
+.publish-btn{
+    color: white;
+    background-color: #f9ae27;
+    margin: 50rpx 30rpx 50rpx 30rpx;
+    border-radius: 10rpx;
+}
+.container>text{
+    font-size: 12px;
+    color: #656565;
+    margin-top: 50rpx;
+    margin-left: 50rpx;
+}
+.container input{   
+    border-bottom: 1px solid #f2f2f2;
+}

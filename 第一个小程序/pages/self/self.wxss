@@ -1,0 +1,23 @@
+/* pages/self/self.wxss */
+.self-item{
+    background-color: white;
+    padding: 30rpx;
+    margin-bottom: 40rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.self-img{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: #f2f2f2;
+}
+
+.self-item text{
+    font-size: 15px;
+
+}
